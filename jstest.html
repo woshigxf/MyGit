@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS练习</title>
-    <script src="jstest.js"></script>
+    <style>
+        *{padding:0; margin:0;}
+        .box{width:600px; height:300px; background:#b9b1ff; margin:0 auto; margin-top: 50px; border-radius: 5px; font-size:18px;}
+        .tips{width:100%; height: 40px; overflow: hidden; line-height: 40px; display:flex; justify-content: space-between;}
+        .tips h1{font-size:18px; font-weight: normal; margin-left:15px;}
+        .tips p{margin-right:15px;}
+        .tips p span{color:#fff; font-weight: bold; padding:0 5px;}
+        .select{width:80%; margin:50px auto; overflow: hidden; display: flex; justify-content:space-around;}
+        .select>div{width:100px; height:100px; background:#fff; border-radius: 10px; text-align: center; line-height: 100px;}
+        .select>div:hover{background:#eee;}
+        .result{display: none;}
+        .result .final{background:#850707; color:#fff; font-size:24px; font-weight: bold;}
+        .result .final:hover{background:#850707;}
+        #btn{width:100px; height:30px; margin:0 auto; display: none;}
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        <div class="tips">
+            <h1>请出拳吧，少年！</h1>
+            <p>你已经获胜了<span id="count">0</span>次</p>
+        </div>
+        <div class="select">
+            <div class="jd">剪刀</div>
+            <div class="st">石头</div>
+            <div class="bu">布</div>
+        </div>
+        <div class="select result">
+            <div class="player">玩家出的</div>
+            <div class="final">YOU WIN OR LOSE</div>
+            <div class="npc">电脑出的</div>
+        </div>
+        <button id="btn">继续</button>
+    </div>
+    <script src="jstest.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
