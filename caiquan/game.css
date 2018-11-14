@@ -41,7 +41,6 @@
 .select {
     width: 80%;
     margin: 50px auto;
-    overflow: hidden;
     display: flex;
     justify-content: space-around;
 }
@@ -74,6 +73,7 @@
 }
 .result>div{    
     cursor: default;
+    position: relative;
 }
 .result>div:hover{
     background-color:transparent;
@@ -84,7 +84,19 @@
     font-size: 24px;
     font-weight: bold;
 }
-
+.result .player span,
+.result .npc span{
+    display:block;
+    width:80px;
+    height:30px;
+    position: absolute;
+    left:10px;
+    bottom:-30px;
+    line-height: 30px;
+    background:#000;
+    color:#fff;
+    border-radius: 5px;
+}
 #btn {
     width: 100px;
     height: 30px;
