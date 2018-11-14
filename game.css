@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 600px;
+    height: 300px;
+    background: #f2f2f2;
+    margin: 0 auto;
+    margin-top: 15%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.tips {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tips h1 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+.tips p {
+    margin-right: 15px;
+}
+
+#count {
+    color: #b60000;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.select {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.select>div {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    background:url(images/finger-guessing.png) no-repeat;
+}
+.select .st,
+.result .b2,
+.result .final.b2{
+    background-position: -100px 0;
+}
+.select .bu,
+.result .b3,
+.result .final.b3{
+    background-position: -200px 0;
+}
+.select>div:hover {
+    background-color: #ccc;
+}
+
+.result {
+    display: none;
+}
+.result>div{    
+    cursor: default;
+}
+.result>div:hover{
+    background-color:transparent;
+}
+.result .final {
+    background:url(images/winloseordraw.png) no-repeat;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#btn {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    display: none;
+    cursor: pointer;
+}
