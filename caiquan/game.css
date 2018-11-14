@@ -53,7 +53,7 @@
     text-align: center;
     line-height: 100px;
     cursor: pointer;
-    background:url(images/finger-guessing.png) no-repeat;
+    background:url(../images/finger-guessing.png) no-repeat;
 }
 .select .st,
 .result .b2,
@@ -79,7 +79,7 @@
     background-color:transparent;
 }
 .result .final {
-    background:url(images/winloseordraw.png) no-repeat;
+    background:url(../images/winloseordraw.png) no-repeat;
     color: #fff;
     font-size: 24px;
     font-weight: bold;
