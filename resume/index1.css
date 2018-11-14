@@ -1,0 +1,22 @@
+h1{
+    width: 100px;
+    height: 600px;
+    padding-top:50px;
+    background:#35c4fd;
+    color:#fff;
+    float: left;
+    margin:0;
+    margin-right:20px;
+    text-align: center;
+}
+p span,
+p a{
+  margin-right:25px;
+}
+
+h4,p{
+  margin:0;
+}
+h4 + p{
+  margin-bottom:15px;
+}

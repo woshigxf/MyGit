@@ -1,0 +1,11 @@
+p span,
+p a{
+  margin-right:25px;
+}
+
+h4,p{
+  margin:0;
+}
+h4 + p{
+  margin-bottom:15px;
+}
