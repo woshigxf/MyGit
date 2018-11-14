@@ -9,6 +9,9 @@ h1{
     margin-right:20px;
     text-align: center;
 }
+h3{
+  padding:10px 0;
+}
 p span,
 p a{
   margin-right:25px;

@@ -1,8 +1,13 @@
+body{
+  margin:20px 0 0 20px;
+}
 p span,
 p a{
   margin-right:25px;
 }
-
+h3{
+  padding:10px 0;
+}
 h4,p{
   margin:0;
 }

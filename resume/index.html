@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>简历</title>
     <link rel="stylesheet" href="index.css">
-    <style>    
+    <style>
+        *{margin:0; padding:0;}
+        body{height: 100%;}
         .stylebtn{
             position: fixed;
             top:20px;
@@ -21,41 +24,48 @@
         }
     </style>
 </head>
+
 <body>
     <h1>简历</h1>
     <h3>基本信息</h3>
     <p>
-    <b>姓名</b>
-    <span>张三</span>
-    <b>性别</b>
-    <span>男</span>
-    <b>应聘职位</b>
-    <span>Web前端工程师</span>
+        <b>姓名</b>
+        <span>张三</span>
+        <b>性别</b>
+        <span>男</span>
+        <b>应聘职位</b>
+        <span>Web前端工程师</span>
     </p>
     <h3>联系方式</h3>
     <p>
-    <b>手机</b>
-    <span>12313231234</span>
-    <b>Email</b>
-    <a href="mailto:joinefe@baidu.com">joinefe@baidu.com</a>
-    <b>个人主页</b>
-    <a href="http://www.github.com/woshigxf/" target="_blank">Github</a>
+        <b>手机</b>
+        <span>12313231234</span>
+        <b>Email</b>
+        <a href="mailto:joinefe@baidu.com">joinefe@baidu.com</a>
+        <b>个人主页</b>
+        <a href="http://www.github.com/woshigxf/" target="_blank">Github</a>
     </p>
     <h3>能力描述</h3>
-    <h4>技术能力</h4>
-    <p>熟练掌握HTML,CSS,JavaScript</p>
-    <h4>综合能力</h4>
-    <p>良好的沟通，主动积极，努力勤奋</p>
+    <div>
+        <h4>技术能力</h4>
+        <p>熟练掌握HTML,CSS,JavaScript</p>
+        <h4>综合能力</h4>
+        <p>良好的沟通，主动积极，努力勤奋</p>
+    </div>
     <h3>教育经历</h3>
-    <h4>本科</h4>
-    <p>百度前端技术学院小薇学院</p>
-    <h4>研究生</h4>
-    <p>百度前端技术学院大斌学院</p>
+    <div>
+        <h4>本科</h4>
+        <p>百度前端技术学院小薇学院</p>
+        <h4>研究生</h4>
+        <p>百度前端技术学院大斌学院</p>
+    </div>
     <h3>项目经历</h3>
-    <h4>小度小度</h4>
-    <p>作为前端工程师角色参与了ABC组件的开发</p>
-    <h4>SAN Doc</h4>
-    <p>作为文档工程师参与了SAN Doc编写</p>
+    <div>
+        <h4>小度小度</h4>
+        <p>作为前端工程师角色参与了ABC组件的开发</p>
+        <h4>SAN Doc</h4>
+        <p>作为文档工程师参与了SAN Doc编写</p>
+    </div>
     <div class="stylebtn">
         <button id="btn1" type="button">样式1</button>
         <button id="btn2" type="button">样式2</button>
@@ -63,4 +73,5 @@
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

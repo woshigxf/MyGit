@@ -1,17 +1,32 @@
 h1{
     width: 100%;
-    height: 50px;
+    height: 100px;
     background:#808080;
     color:#fff;
     font-size:24px;
-    line-height: 50px;
+    line-height: 100px;
     padding-left:20px;
     box-sizing: border-box;
 }
 h3{
   width:150px;
   height:150px;
-  background:#aaa;
+  background:#ddd;
+  float: left;
+  text-align: center;
+  line-height: 150px;
+  border-bottom:2px solid #ccc;
+}
+h3 + p,
+h3 + div{
+  float: left;
+  width:calc(100% - 150px - 20px);
+  height:130px;
+  border-bottom:2px solid #ccc;
+  padding:20px 0 0 20px;
+}
+h3 + div>h4{
+  float:left;
 }
 p span,
 p a{
