@@ -433,31 +433,52 @@ var BOXRULETOP, BOXRULELEFT, BOXRULEWIDTH, BOXRULEHEIGHT, self = this,
         },
         objEventClick: function () {
             $(".hostspaceTable img").click(function () {
-                for (var i = $(this).attr("src"), t = $(".hostspaceTable img"), n = 0; n < t.length; n++) $(t[n]).attr("src", $(t[n]).attr("src").replace("_s.jpg", ".jpg"));
+                for (var i = $(this).attr("src"), t = $(".hostspaceTable img"), n = 0; n < t.length; n++) 
+                $(t[n]).attr("src", $(t[n]).attr("src").replace("_s.jpg", ".jpg"));
                 i.indexOf("_s.jpg") == -1 && $(this).attr("src", i.replace(".jpg", "_s.jpg"))
-            }), $("#ChoosePointer").click(function () {
-                $(this).removeClass().addClass("icon2_s"), $("#Choosehostspace").removeClass().addClass("icon1"), removeMouseFn($("#box")), $("#box").css("cursor", "default"), $("#box").pointerBox()
-            }), $("#Choosehostspace").click(function () {
-                $(this).removeClass().addClass("icon1_s"), $("#ChoosePointer").removeClass().addClass("icon2"), removeMouseFn($("#box")), $(".box-rel").removeClass("poinert-sel"), $("#box").css("cursor", "crosshair"), $("#box").dragBox()
-            }), $("#hostspacePreview").click(function () {
+            }), 
+            $("#ChoosePointer").click(function () {
+                $(this).removeClass().addClass("icon2_s"), 
+                $("#Choosehostspace").removeClass().addClass("icon1"), 
+                removeMouseFn($("#box")), 
+                $("#box").css("cursor", "default"), 
+                $("#box").pointerBox()
+            }), 
+            $("#Choosehostspace").click(function () {
+                $(this).removeClass().addClass("icon1_s"), 
+                $("#ChoosePointer").removeClass().addClass("icon2"), 
+                removeMouseFn($("#box")), 
+                $(".box-rel").removeClass("poinert-sel"), 
+                $("#box").css("cursor", "crosshair"), 
+                $("#box").dragBox()
+            }), 
+            $("#hostspacePreview").click(function () {
                 var t = self.init.createCode(),
                     n = $("<form action='/hot/preview' method='post' target='_blank'><input type='hidden' id='code' name='code' value='" + escape(t) + "' /></form>");
                 n.appendTo(document.body).submit()
-            }), $("#hostspaceCreate").click(function () {
-                $("#CreateText").val(self.init.createCode()), $(".createBox").show(), showBox("dlgCreateCode"), $("#CreateText").click(function () {
+            }), 
+            $("#hostspaceCreate").click(function () {
+                $("#CreateText").val(self.init.createCode()), 
+                $(".createBox").show(), 
+                showBox("dlgCreateCode"), 
+                $("#CreateText").click(function () {
                     $("#CreateText").select()
-                }), $("#copy_code").unbind("zclip").zclip({
+                }), 
+                $("#copy_code").unbind("zclip").zclip({
                     path: "/zclip/zeroclipboard.swf",
                     copy: $("#CreateText").val(),
                     afterCopy: function () {
                         closeBox("dlgCreateCode"), $("#copylightbox").click()
                     }
                 })
-            }), $("#copy_close").click(function () {
+            }), 
+            $("#copy_close").click(function () {
                 closeBox("dlgCreateCode")
-            }), $("#cleanUrl").click(function () {
+            }), 
+            $("#cleanUrl").click(function () {
                 $("#ChangBgUrl").val("")
-            }), $(".copylightbox").lightbox()
+            }), 
+            $(".copylightbox").lightbox()
         },
         dialogControl: function () {
             $("#dlgCreateCode").dialog("close")
