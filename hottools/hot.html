@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.mtmao.com/hot by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Nov 2018 04:57:08 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+
+    <title>热区工具</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="css/base.css" rel="stylesheet" />
+
+    <link href="css/easyui.css" rel="stylesheet" />
+
+    <link href="css/ext.css" rel="stylesheet" />
+
+    <link href="css/lightBox.css" rel="stylesheet" />
+
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/browser.css" rel="stylesheet" />
+
+    <link href="css/jqueryPager.css" rel="stylesheet" />
+
+
+    <script src="js/base.js"></script>
+
+    <script src="js/easyui.js"></script>
+
+    <script src="js/ext.js"></script>
+
+    <script src="js/lightBox.js"></script>
+
+    <script src="js/common.js"></script>
+
+    <script src="js/browser.js"></script>
+
+    <script src="js/md5.js"></script>
+
+    <script src="js/jqueryPager.js"></script>
+
+    <script src="zclip/zclip.js"></script>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!---Header Begin--->
+
+        
+        <!---Container Begin--->
+        <div id="mainBox">
+
+
+            <link href="css/hot.css" rel="stylesheet" />
+            <link href="css/ruler.css" rel="stylesheet" />
+
+            <script src="js/hot.js"></script>
+            <script src="js/ruler.js"></script>
+            <!-- 说明开始 -->
+            <dl class="helper inner">
+                <dt><span class="thelp"></span>热区画报工具</dt>
+                <dd>可以实现在一张图片上添加多个链接。</dd>
+                <ul class="helperInfo">
+                    <li><span class="num1"></span> 复制图片地址（苏宁图片空间的图片“链接”）粘贴到下面框中；</li>
+                    <li><span class="num2"></span> 然后在下图用鼠标，划出要添加链接的区域；</li>
+                    <li><span class="num3"></span> 双击想要设置链接的区域，填写即可。</li>
+                </ul>
+            </dl>
+            <!-- 工具箱开始 -->
+            <div class="tools">
+                <div class="inner">
+                    <ul class="toolSet">
+                        <li class="thelp"><a href="javascript:viod();" target="_blank"
+                                class="help"><span>使用帮助</span></a></li>
+                        <li>
+                            <input id="tools_duiqi" type="checkbox" checked="checked" />
+                            <label for="tools_duiqi">对齐工具</label></li>
+                        <li>
+                            <input id="tools_zuobiao" type="checkbox" />
+                            <label for="tools_zuobiao">鼠标坐标</label></li>
+                    </ul>
+                    <ul class="toolBar">
+                        <li>
+                            <button id="hostspacePreview" class="J_import">预览</button></li>
+                        <li>
+                            <button id="hostspaceCreate" class="J_export">生成代码</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="toolLoad">
+                <div class="inner">
+                    <span>请填图片地址</span>
+                    <input type="text" value="https://image.suning.cn/uimg/sop/commodity/202054642878470801579850_x.jpg"
+                        class="loadText" id="ChangBgUrl" />
+                    <input type="button" value="确定" class="submit" id="ChangBgBtn" />
+                    <a id="cleanUrl">清空</a>
+                    <a href="http://tu.suning.com" target="_blank">图片空间</a>
+                </div>
+            </div>
+            <!-- 操作面板开始 -->
+            <div class="controlSelect">
+                <div class="selectTop">
+                </div>
+                <div class="selectCenter">
+                    <li>
+                        <a class="icon1_s" title="热区" id="Choosehostspace"><span>热区</span></a>
+                    </li>
+                    <li>
+                        <a class="icon2" title="选择指针" id="ChoosePointer"><span>选中热区</span></a>
+                    </li>
+                </div>
+                <div class="selectBottom">
+                </div>
+            </div>
+            <div class="hostspaceBox">
+                <div class="hostspaceBox_top"></div>
+                <div class="hostspaceBox_center">
+                    <div class="hostspaceBox_title">
+                        <div class="title_name"><b>对齐工具</b></div>
+                        <div class="title_more">
+                            <a href="javascript:void(0)" class="btn_close" id="closehostspaceBox"></a>
+                        </div>
+                    </div>
+                    <div class="hostspaceBox_info">
+                        <div class="hostspaceTable">
+                            <table>
+                                <tr>
+                                    <th colspan="4">选中多个对象后进行下面的操作</th>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td width="35" align="right"><a href="javascript:void(0)" class="moveZB" title="左边">
+                                            <img src="images/hot/icon_top_left.jpg" width="24" height="24" /></a></td>
+                                    <td width="70">&nbsp;&nbsp;<a href="javascript:void(0)" class="moveZB" title="左边">左边</a></td>
+                                    <td width="35" align="right"><a href="javascript:void(0)" class="moveYB" title="右边">
+                                            <img src="images/hot/icon_top_right.jpg" width="24" height="24" /></a></td>
+                                    <td width="70">&nbsp;&nbsp;<a href="javascript:void(0)" class="moveYB" title="右边">右边</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><a href="javascript:void(0)" class="moveCZ" title="垂直居中">
+                                            <img src="images/hot/icon_center_left.jpg" width="24" height="24" /></a></td>
+                                    <td>&nbsp;&nbsp;<a href="javascript:void(0)" class="moveCZ" title="垂直居中">垂直居中</a></td>
+                                    <td align="right"><a href="javascript:void(0)" class="moveSZ" title="水平居中">
+                                            <img src="images/hot/icon_center_right.jpg" width="24" height="24" /></a></td>
+                                    <td>&nbsp;&nbsp;<a href="javascript:void(0)" class="moveSZ" title="水平居中">水平居中</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><a href="javascript:void(0)" class="moveDB" title="顶边">
+                                            <img src="images/hot/icon_bottom_left.jpg" width="24" height="24" /></a></td>
+                                    <td>&nbsp;&nbsp;<a href="javascript:void(0)" class="moveDB" title="顶边">顶边</a></td>
+                                    <td align="right"><a href="javascript:void(0)" class="moveDiB" title="底边">
+                                            <img src="images/hot/icon_bottom_right.jpg" width="24" height="24" /></a></td>
+                                    <td>&nbsp;&nbsp;<a href="javascript:void(0)" class="moveDiB" title="底边">底边</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="hostspace_line">
+                                            <span>对齐间隔</span><input type="text" id="poinertBoxLine" value="0" /><span>PX</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <input type="button" class="alert_submit" id="moveHXJJ" value="横向间距" /><input
+                                            type="button" class="alert_submit" id="moveZXJJ" value="纵向间距" /></td>
+                                </tr>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="hostspaceBox_bottom"></div>
+            </div>
+            <!-- 画布开始 -->
+            <div class="boxContainer">
+                <div id="boxRule" onselectstart="return false">
+                    <div class="HOTruler HOTvRule"></div>
+                    <div class="HOTruler HOThRule"></div>
+                    <div id="box" date-val='1' boxsrc="">
+                    </div>
+                </div>
+            </div>
+            <!-- 双击弹出开始 -->
+            <div id="dlgCreateCode" class="easyui-dialog" style="width: 600px; height: 315px" title="&nbsp; 热区代码生成"
+                data-options="closed:true,iconCls:'icon-cut'">
+                <div class="cssBox">
+                    <div class="cssBox_info">
+                        <textarea class="cssBox_Content" id="CreateText"></textarea>
+                    </div>
+                    <div class="cssBox_bottom">
+                        <button class="btn_close_02" id="copy_close">关闭</button>
+                        <button class="btn_copy" id="copy_code">点此复制</button>
+                    </div>
+                </div>
+            </div>
+            <div id="dlgdbConfig" data-options="collapsible:false,minimizable:false,maximizable:false"></div>
+            <div id="CopySuccessBox" style="display:none;">
+                <div class="copySuccess_box">
+                    <a href="javascript:void(0)" class="btn_close_03" onclick="$('.jquery-lightbox-button-close').click();">&nbsp;</a>
+                    <div class="show_text">
+                        <p>已经复制成功！</p>
+                        <p>点击进入 <a href="https://shds.suning.com/shds-web/positiveNew/wap/page/deco/loadEditIndex.action" target="_blank">店铺装修</a>
+                            ，双击模块粘贴代码即可</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#CopySuccessBox" id="copylightbox" class="copylightbox" style=" display:none;"></a>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
