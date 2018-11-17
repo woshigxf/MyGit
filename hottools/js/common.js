@@ -20,7 +20,7 @@ function flashChecker() {
 function zclipCopy() {
     var n = flashChecker();
     n.f ? $("#CssCopy").zclip({
-        path: "/zclip/ZeroClipboard.swf",
+        path: "zclip/zeroclipboard.swf",
         afterCopy: function () {
             $("#CssCopy").select(), closeBox("CssBox"), $("#lightBoxBtn").click()
         },

@@ -465,7 +465,7 @@ var BOXRULETOP, BOXRULELEFT, BOXRULEWIDTH, BOXRULEHEIGHT, self = this,
                     $("#CreateText").select()
                 }), 
                 $("#copy_code").unbind("zclip").zclip({
-                    path: "/zclip/zeroclipboard.swf",
+                    path: "zclip/zeroclipboard.swf",
                     copy: $("#CreateText").val(),
                     afterCopy: function () {
                         closeBox("dlgCreateCode"), $("#copylightbox").click()
