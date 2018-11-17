@@ -454,7 +454,7 @@ var BOXRULETOP, BOXRULELEFT, BOXRULEWIDTH, BOXRULEHEIGHT, self = this,
             }), 
             $("#hostspacePreview").click(function () {
                 var t = self.init.createCode(),
-                    n = $("<form action='/hot/preview' method='post' target='_blank'><input type='hidden' id='code' name='code' value='" + escape(t) + "' /></form>");
+                    n = $("<form action='preview.php' method='post' target='_self'><input type='hidden' id='code' name='code' value='" + escape(t) + "' /></form>");
                 n.appendTo(document.body).submit();
             }), 
             $("#hostspaceCreate").click(function () {
