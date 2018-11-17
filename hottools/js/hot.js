@@ -209,7 +209,7 @@ function showAlertBox(n, t, i, r) {
                     s = t.x || t.pageX,
                     o = t.y || t.pageY,
                     c = n(".drag-box").length + 1;
-                u = r.boxId ? n('<div class="easyui-draggable easyui-resizable drag-box drag-box-check box-rel" title="" mcMode="" borderMode="none" borderColor="000000" areaMode="_blank" areaSrc="" data-options="onDrag:onDrag,onStopResize:onStopResizeL,edge:10" id="' + r.boxId + '"><span class="lady-box-frame"><div class="icon t_l"> </div><div class="icon t_c"> </div><div class="icon t_r"></div><div class="icon c_l"></div><div class="icon c_r"></div><div class="icon b_l"></div><div class="icon b_c"></div><div class="icon b_r"></div></span><span class="lady-box-close"></span></div>') : n('<div class="easyui-draggable easyui-resizable drag-box drag-box-check box-rel" title="" mcMode="" borderMode="none" borderColor="000000" areaMode="_blank" areaSrc="" data-options="onDrag:onDrag,onStopResize:onStopResizeL,edge:10" id="hostspaceBox' + c + '"><span class="lady-box-frame"><span class="drag-box-tip-text"></span><div class="icon t_l"></div><div class="icon t_c"> </div><div class="icon t_r"></div><div class="icon c_l"></div><div class="icon c_r"></div><div class="icon b_l"></div><div class="icon b_c"></div><div class="icon b_r"></div></span><span class="lady-box-close"></span></div>'), f = null, e = null, u.appendTo(i).offset({
+                u = r.boxId ? n('<div class="easyui-draggable easyui-resizable drag-box drag-box-check box-rel" title="" mcMode="" borderMode="none" borderColor="000000" areaMode="_blank" areaSrc="" data-options="onDrag:onDrag,onStopResize:onStopResizeL,edge:10" id="' + r.boxId + '"><span class="lady-box-frame"><div class="icon t_l"> </div><div class="icon t_c"> </div><div class="icon t_r"></div><div class="icon c_l"></div><div class="icon c_r"></div><div class="icon b_l"></div><div class="icon b_c"></div><div class="icon b_r"></div></span><span class="lady-box-close"></span></div>') : n('<div class="easyui-draggable easyui-resizable drag-box drag-box-check box-rel" title="" mcMode="" borderMode="none" borderColor="000000" areaMode="_blank" areaSrc="" data-options="onDrag:onDrag,onStopResize:onStopResizeL,edge:10" id="hostspaceBox' + c + '" ><span class="lady-box-frame"><span class="drag-box-tip-text"></span><div class="icon t_l"></div><div class="icon t_c"> </div><div class="icon t_r"></div><div class="icon c_l"></div><div class="icon c_r"></div><div class="icon b_l"></div><div class="icon b_c"></div><div class="icon b_r"></div></span><span class="lady-box-close"></span></div>'), f = null, e = null, u.appendTo(i).offset({
                     left: s,
                     top: o
                 }).draggable().resizable(), u.children(".lady-box-close").bind("click", function () {
@@ -455,7 +455,7 @@ var BOXRULETOP, BOXRULELEFT, BOXRULEWIDTH, BOXRULEHEIGHT, self = this,
             $("#hostspacePreview").click(function () {
                 var t = self.init.createCode(),
                     n = $("<form action='/hot/preview' method='post' target='_blank'><input type='hidden' id='code' name='code' value='" + escape(t) + "' /></form>");
-                n.appendTo(document.body).submit()
+                n.appendTo(document.body).submit();
             }), 
             $("#hostspaceCreate").click(function () {
                 $("#CreateText").val(self.init.createCode()), 

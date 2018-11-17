@@ -1,4 +1,4 @@
-<!DOCTYPE html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!DOCTYPE html>
 <html lang="en">
 
 <!-- Mirrored from www.mtmao.com/hot by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Nov 2018 04:57:08 GMT -->
@@ -7,44 +7,33 @@
 
 <head>
 
-    <title>热区工具</title>
+    <title>自定义装修-热区工具</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
 
     <link href="css/base.css" rel="stylesheet" />
-
     <link href="css/easyui.css" rel="stylesheet" />
-
     <link href="css/ext.css" rel="stylesheet" />
-
     <link href="css/lightBox.css" rel="stylesheet" />
-
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/browser.css" rel="stylesheet" />
-
     <link href="css/jqueryPager.css" rel="stylesheet" />
-
+    <link href="css/hot.css" rel="stylesheet" />
+    <link href="css/ruler.css" rel="stylesheet" />
 
     <script src="js/base.js"></script>
-
     <script src="js/easyui.js"></script>
-
     <script src="js/ext.js"></script>
-
     <script src="js/lightBox.js"></script>
-
     <script src="js/common.js"></script>
-
     <script src="js/browser.js"></script>
-
     <script src="js/md5.js"></script>
-
     <script src="js/jqueryPager.js"></script>
-
     <script src="zclip/zclip.js"></script>
-
-
+    <script src="js/hot.js"></script>
+    <script src="js/ruler.js"></script>
+    
 </head>
 
 <body>
@@ -56,28 +45,27 @@
         <!---Container Begin--->
         <div id="mainBox">
 
-
-            <link href="css/hot.css" rel="stylesheet" />
-            <link href="css/ruler.css" rel="stylesheet" />
-
-            <script src="js/hot.js"></script>
-            <script src="js/ruler.js"></script>
             <!-- 说明开始 -->
             <dl class="helper inner">
-                <dt><span class="thelp"></span>热区画报工具</dt>
+                <dt><i class="iconfont">&#xe6b1;</i>自定义热区画报工具</dt>
                 <dd>可以实现在一张图片上添加多个链接。</dd>
                 <ul class="helperInfo">
-                    <li><span class="num1"></span> 复制图片地址（苏宁图片空间的图片“链接”）粘贴到下面框中；</li>
-                    <li><span class="num2"></span> 然后在下图用鼠标，划出要添加链接的区域；</li>
-                    <li><span class="num3"></span> 双击想要设置链接的区域，填写即可。</li>
+                    <li><span class="num1">1</span> 复制图片地址（苏宁图片空间的图片“链接”）粘贴到下面框中；</li>
+                    <li><span class="num2">2</span> 然后在下图用鼠标，划出要添加链接的区域；</li>
+                    <li><span class="num3">3</span> 双击想要设置链接的区域，填写即可。</li>
                 </ul>
             </dl>
             <!-- 工具箱开始 -->
             <div class="tools">
                 <div class="inner">
                     <ul class="toolSet">
-                        <li class="thelp"><a href="javascript:viod();" target="_blank"
-                                class="help"><span>使用帮助</span></a></li>
+                        <li class="thelp">
+                            <a href="javascript:viod();" target="_blank"
+                                class="help">
+                                <i class="iconfont">&#xe634;</i>
+                                <span>使用帮助</span>
+                            </a>
+                        </li>
                         <li>
                             <input id="tools_duiqi" type="checkbox" checked="checked" />
                             <label for="tools_duiqi">对齐工具</label></li>
